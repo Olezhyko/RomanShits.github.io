@@ -450,3 +450,227 @@ input {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 1800px) {
+
+    section,
+    footer,
+    .copyright-and-policy {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+
+    .item {
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+
+    section,
+    footer,
+    .copyright-and-policy {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+@media only screen and (max-width: 1520px) {
+
+    section,
+    footer,
+    .copyright-and-policy {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    h2,
+    .description {
+        padding-left: 250px;
+    }
+
+    .button-intro {
+        margin-left: 250px;
+    }
+
+    .lower-header-2,
+    .footer-nav {
+        flex-wrap: wrap;
+    }
+
+    #flex-container {
+        flex-wrap: nowrap;
+    }
+
+    .shops, .subscribe {
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+
+    section,
+    footer,
+    .copyright-and-policy {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #flex-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .flex-container {
+        justify-content: center;
+    }
+
+    hr {
+        width: 150px;
+    }
+
+    footer .item {
+        width: 200px;   
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    h2,
+    .description {
+        padding-left: 150px;
+    }
+
+    .button-intro {
+        margin-left: 150px;
+    }
+
+    .input {
+        margin-left: 150px;
+    }
+
+}
+
+@media only screen and (max-width: 960px) {
+
+    .footer-nav {
+        justify-content: center;
+    }
+    
+    .contact-info {
+        justify-content: center;
+    }
+
+    #policy {
+        text-align: right;
+        margin-left: 10px;
+    }
+
+    .input {
+        margin-left: auto;
+    }
+
+    .lower-header__logo {
+        margin: 0px 20px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+
+    h2,
+    .description {
+        padding-left: 50px;
+    }
+
+    .button-intro {
+        margin-left: 50px;
+    }
+
+    #policy {
+        margin-left: 10px;
+    }
+
+    .impuls {
+        padding: 35px 30px;
+    }
+
+    .logo-email,
+    .logo-shops {
+        display: none;
+    }
+
+    .number {
+        margin-left: 40px;
+    }
+
+    hr {
+        width: 200px;
+    }
+
+    .contact-info {
+        flex-wrap: wrap;
+    }
+
+    .flex-container,
+    .subscribe__description,
+    .shops__description {
+        justify-content: center;
+    }
+
+    .lower-header__logo {
+        margin-bottom: 20px ;
+    }
+
+    .lower-header__call .button {
+        flex-shrink: 1;
+    }
+
+    section .item {
+        flex-grow: 1;
+    }
+
+    .address {
+        margin: 30px 100px 30px 10px
+    }
+
+    .input {
+        margin-left: 10px;
+    }
+
+    .shops__description, .subscribe__description {
+        margin-left: 35px;
+    }
+
+    .nav__link {
+        font-size: 11px;
+        margin: 0 10px;
+    }
+
+    .button {
+        width: 145px;
+    }
+
+    .social-network-container {
+        margin-bottom: 10px;
+    }
+
+    .address {
+        margin: 0px 20px;
+    }
+
+    .input {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .lower-header__call .button, .lower-header-2 .number {
+        margin-left: 10px;
+    }
+
+    .nav__link {
+        margin: 0 7px;
+    }
+}
