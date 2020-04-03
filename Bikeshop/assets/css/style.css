@@ -55,6 +55,7 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
+  flex-direction: column;
 }
 
 .header_title {
@@ -90,6 +91,14 @@ body {
   font-size: 14pt;
 }
 
+.nav_main li {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+}
+
 .nav_main {
   display: inline-block;
   text-align: center;
@@ -119,12 +128,12 @@ body {
 }
 
 /*Section*/
-.section {
+.bikes_top {
   background: #ffffff;
 }
 
 /*Top*/
-.section_history_top {
+.bikes_top_history_top {
   display: flex;
   justify-content: space-between;
   margin: 0px 100px;
@@ -133,7 +142,7 @@ body {
   padding-right: 30px;
 }
 
-.section_history_top_text {
+.bikes_top_history_top_text {
   max-width: 686px;
   width: 100%;
   max-height: 850px;
@@ -141,22 +150,22 @@ body {
   padding: 50px 40px;
 }
 
-.section_history_top_text_title {
+.bikes_top_history_top_text_title {
   font-family: "Old Standard TT", serif;
   font-size: 34pt;
   color: #3c3c3c;
 }
 
-.section_history_top_image {
+.bikes_top_history_top_image {
   max-width: 686px;
   width: 100%;
   max-height: 850px;
   height: 100%;
   padding: 50px 40px;
-  float: right;
+  margin: auto auto;
 }
 
-.section_img_top {
+.bikes_top_img_top {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -167,7 +176,7 @@ body {
   box-shadow: 0px 0px 25px 0px #9D7A8A;
 }
 
-.section_history_top_text_subtitle {
+.bikes_top_history_top_text_subtitle {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-size: 12pt;
@@ -196,7 +205,7 @@ body {
   text-transform: uppercase;
 }
 
-.section_history_botomn {
+.bikes_botomn_history_botomn {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -204,7 +213,7 @@ body {
   margin-right: 130px;
 }
 
-.section_history_botomn_image_properties {
+.bikes_botomn_history_botomn_image_properties {
   max-width: 800px;
   width: 100%;
   max-height: 550px;
@@ -213,7 +222,7 @@ body {
   padding-right: 30px;
 }
 
-.section_history_botomn_text {
+.bikes_botomn_history_botomn_text {
   max-width: 540px;
   width: 100%;
   max-height: 135px;
@@ -222,7 +231,7 @@ body {
   padding-right: 40px;
 }
 
-.section_history_botomn_text_properties {
+.bikes_botomn_history_botomn_text_properties {
   font-family: "Ubuntu";
   font-weight: lighter;
   font-size: 10pt;
@@ -233,12 +242,12 @@ body {
   padding-left: 10px;
 }
 
-.features {
+.features_features {
   color: #3c3c3c;
   margin-bottom: 100px;
 }
 
-.text {
+.features_text {
   max-width: 1920px;
   width: 100%;
   max-height: 180px;
@@ -246,7 +255,7 @@ body {
   text-align: center;
 }
 
-.text_title {
+.features_text_title {
   font-family: "Old Standard TT", serif;
   font-size: 34pt;
   color: #3c3c3c;
@@ -256,7 +265,7 @@ body {
   text-align: center;
 }
 
-.text_subtitle {
+.features_text_subtitle {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-size: 12pt;
@@ -275,7 +284,7 @@ body {
   align-items: center;
 }
 
-.left {
+.features_left {
   max-width: 60px;
   width: 100%;
   max-height: 180px;
@@ -283,14 +292,14 @@ body {
   margin-right: 30px;
 }
 
-.center {
+.features_center {
   max-width: 980px;
   width: 100%;
   max-height: 650px;
   height: 100%;
 }
 
-.right {
+.features_right {
   max-width: 220px;
   width: 100%;
   max-height: 380px;
@@ -517,27 +526,27 @@ input {
 }
 
 @media screen and (max-width: 1200px) {
-  .section_history_top {
+  .bikes_top_history_top {
     display: flex;
     margin: 0 0;
   }
 }
 @media screen and (max-width: 992px) {
-  .section_history_top_text_title {
+  .bikes_top_history_top_text_title {
     font-size: 36px;
   }
 
-  .section_history_top_text {
+  .bikes_top_history_top_text {
     font-size: 10pt;
   }
 
-  .section_history_top {
+  .bikes_top_history_top {
     display: flex;
     margin: 0 0;
     height: auto;
   }
 
-  .section_history_top_text {
+  .bikes_top_history_top_text {
     max-width: 686px;
     width: 100%;
     max-height: 850px;
@@ -546,21 +555,22 @@ input {
     word-wrap: break-word;
   }
 
-  .section_history_botomn {
+  .bikes_botomn_history_botomn {
     margin: 0 0;
   }
 }
 @media only screen and (max-width: 768px) {
-  .section_history_top {
+  .bikes_top_history_top {
     display: flex;
     margin: 0 0;
     height: 100%;
+    padding: 0 0;
   }
 
-  .section_history_top_text {
+  .bikes_top_history_top_text {
     max-width: 686px;
     width: 100%;
-    max-height: 850px;
+    max-height: 1000px;
     height: 100%;
     padding: 50px 40px;
     word-wrap: break-word;
@@ -569,11 +579,12 @@ input {
   .nav {
     text-transform: uppercase;
     font-size: 14pt;
+    flex-direction: column;
   }
 
   .nav_main {
-    display: inline-block;
     text-align: center;
+    flex-direction: column;
   }
 
   .nav_main a {
@@ -588,12 +599,184 @@ input {
     text-decoration: none;
     display: inline-block;
     vertical-align: top;
-    padding-left: 80px;
-    padding-right: 30px;
+    padding: 0 0;
     text-transform: uppercase;
   }
 
   .section_history_botomn {
     margin: 0 0;
+  }
+
+  .bikes_top_history_top {
+    flex-direction: column;
+  }
+
+  .bikes_botomn_history_botomn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .bikes_botomn_history_botomn_image_properties {
+    max-width: 800px;
+    width: 100%;
+    max-height: 1000px;
+    height: 100%;
+    padding-right: 0px;
+  }
+
+  .bikes_botomn_history_botomn_text {
+    max-width: 540px;
+    width: 100%;
+    max-height: 1000px;
+    height: 100%;
+    align-items: center;
+    padding-right: 10px;
+  }
+
+  .bikes_botomn_history_botomn_text_properties {
+    font-family: "Ubuntu";
+    font-weight: lighter;
+    font-size: 10pt;
+    line-height: 2;
+    color: #6a6a6a;
+    border-left: 2px solid #ccc;
+    margin-left: 10px;
+  }
+
+  .features_text_subtitle {
+    max-height: 150px;
+    height: 100%;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .bikes_top_history_top_image {
+    padding: 0 40px;
+    padding-bottom: 40px;
+    max-width: 85%;
+  }
+
+  .footer_central {
+    max-width: 70%;
+  }
+
+  .footer_title {
+    font-family: "Old Standard TT", serif;
+    color: #3c3c3c;
+    font-size: 40pt;
+    line-height: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .footer_subtitle {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-size: 10pt;
+    color: #6a6a6a;
+    line-height: 1.5;
+    margin: 20px 50px;
+    text-align: center;
+  }
+
+  .email_line {
+    display: flex;
+    margin: 0 auto;
+    max-height: 40px;
+    height: 100%;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .email_line {
+    width: 80%;
+  }
+
+  input {
+    max-height: 40px;
+    height: 80%;
+    max-width: 700px;
+    width: 80%;
+  }
+
+  .btn-sub {
+    max-width: 100px;
+    width: 80%;
+    max-height: 40px;
+    height: 80%;
+    font-size: 16px;
+    vertical-align: top;
+    color: #ffffff;
+    font-size: 10pt;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #3c3c3c;
+    border: 1px solid #949494;
+    color: #ffffff;
+    font-size: 10pt;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+  }
+
+  .botomn_text {
+    display: flex;
+    align-items: flex-end;
+    max-width: 1000px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header_inner {
+    flex-direction: column;
+  }
+
+  .nav_basket a {
+    color: #ffffff;
+    text-decoration: none;
+    vertical-align: top;
+    text-transform: uppercase;
+  }
+
+  .components_panel {
+    max-width: 980px;
+    width: 100%;
+    max-height: 1500px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .footer_title {
+    font-size: 26pt;
+  }
+
+  .nav_main li {
+    color: #ffffff;
+    text-decoration: none;
+    flex-direction: column;
+    vertical-align: top;
+  }
+
+  .nav_main {
+    text-transform: uppercase;
+    font-size: 14pt;
+    flex-direction: column;
+    display: flex;
   }
 }
